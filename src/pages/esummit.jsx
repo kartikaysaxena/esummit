@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './esummit.css'
 import IITP from '../static/IITP.jpg'
-import esummit from '../static/esummit.jpeg'
+import esummit from '../static/esummit-1.png'
 
 export default function Esummit() {
     const [countdown, setCountdown] = useState({
@@ -35,8 +35,9 @@ export default function Esummit() {
 
     return (
         <div className='background-container' style={{ width: '100%', maxWidth: '100vw', overflowX: 'hidden' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '2rem', paddingBottom: '2rem', marginBottom: '8rem', paddingTop: '3rem', width: '100%' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '2rem', position: 'absolute', paddingTop: '3rem', width: '100%', marginTop: '-10rem'}}>
                 <div className='font-size' style={{ marginLeft: '15rem', color:'white' }}>
+                    <img src={esummit} alt="" style={{height: '50%', width: '50%'}} />
                 </div>
                 <div className='font-size' style={{ textAlign: 'right', marginRight: '20rem' }}>
                     <ul style={{ listStyleType: 'none', margin: 0, padding: 0 }}>
@@ -55,58 +56,60 @@ export default function Esummit() {
                     </ul>
                 </div>
             </div>
-            <div style={{display: 'flex', alignContent: 'center'}}>
-                <img className='center-img' src={IITP} alt="photo" style={{paddingBottom: '4rem'}} />
-            </div>
+
+
             {/* countdown */}
-            <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', paddingBottom: '4rem' }}>
-                <div style={{width: '90%', display: 'flex', height: '16rem', position: 'relative', background: 'radial-gradient(38.61% 50.88% at 31.45% 51.80%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0) 100%)', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)', width: '100%' }}>
-                    <div style={{width: '40%', height: '100%', marginLeft: '6rem', marginTop: '3rem'}}>
-                        <span style={{color: 'white', fontSize: 60, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Count </span>
-                        <span style={{color: '#601A71', fontSize: 60, fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Every<br/></span>
-                        <span style={{color: '#440C52', fontSize: 60, fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Second</span>
-                        <span style={{color: 'white', fontSize: 60, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}> Until<br/>the </span>
-                        <span style={{color: '#450C53', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Summit</span>
-                    </div>
-                    <div style={{marginTop: '3rem', marginBottom:'4rem', display: 'flex', }}>
-                        <div style={{color: 'white', fontSize: 80, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word', display: 'flex'}}>
-                            <div style={{marginRight: '2rem'}}>
-                                <div>
-                                    {countdown.days} :
-                                </div>
-                                <div style={{marginTop: '-2rem'}}>
-                                    <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Days]</span>
-                                </div>
-                            </div>
-                            <div style={{marginRight: '2rem'}}>
-                                <div>
-                                    {countdown.hours} :
-                                </div>
-                                <div style={{marginTop: '-2rem'}}>
-                                    <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Hours]</span>
-                                </div>             
-                            </div>
-                            <div style={{marginRight: '2rem'}}>
-                                <div>
-                                    {countdown.minutes} :
-                                </div>
-                                <div style={{marginTop: '-2rem'}}>
-                                    <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Minutes]</span>
-                                </div>             
-                            </div>
-                            <div>
-                                <div>
-                                    {countdown.seconds}
-                                </div>
-                                <div style={{marginTop: '-2rem'}}>
-                                    <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Seconds]</span>
-                                </div>             
-                            </div>   
+            <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center', height: '100vh', margin: '5rem 8rem', overflow: 'hidden'}}>
+                <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', paddingBottom: '4rem' }}>
+                    <div style={{width: '90%', display: 'flex', height: '16rem', position: 'relative', background: 'radial-gradient(38.61% 50.88% at 31.45% 51.80%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0) 100%)', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)', width: '100%' }}>
+                        <div style={{width: '40%', height: '100%', marginLeft: '6rem', marginTop: '3rem'}}>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Count </span>
+                            <span style={{color: '#601A71', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Every<br/></span>
+                            <span style={{color: '#440C52', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Second</span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}> Until<br/>the </span>
+                            <span style={{color: '#450C53', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Summit</span>
                         </div>
-                        <br/>
+                        <div style={{marginTop: '3rem', marginBottom:'4rem', display: 'flex', }}>
+                            <div style={{color: 'white', fontSize: 'clamp(50px, 5vw, 80px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word', display: 'flex'}}>
+                                <div style={{marginRight: '2rem'}}>
+                                    <div>
+                                        {countdown.days} :
+                                    </div>
+                                    <div style={{}}>
+                                        <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Days]</span>
+                                    </div>
+                                </div>
+                                <div style={{}}>
+                                    <div>
+                                        {countdown.hours} :
+                                    </div>
+                                    <div style={{}}>
+                                        <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Hours]</span>
+                                    </div>             
+                                </div>
+                                <div style={{}}>
+                                    <div>
+                                         {countdown.minutes} :
+                                    </div>
+                                    <div style={{}}>
+                                        <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Minutes]</span>
+                                    </div>             
+                                </div>
+                                <div>
+                                    <div>
+                                        {countdown.seconds}
+                                    </div>
+                                    <div style={{}}>
+                                        <span style={{color: 'white', fontSize: 25, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>[Seconds]</span>
+                                    </div>             
+                                </div>   
+                            </div>
+                            <br/>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div style={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem', marginTop: '3rem', marginBottom: '2rem', }}>
                 <div style={{fontSize: '4rem', color: 'white', textAlign: 'center', marginBottom: '2rem'}}>
                     About the E-Summit

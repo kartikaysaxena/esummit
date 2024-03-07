@@ -217,9 +217,23 @@ export default function Esummit() {
                     </defs>
                 </svg>
             </div>
+
+            <br />
+
+            <div style={{color: 'white', fontSize: 84, fontFamily: 'Lato', fontWeight: '900', wordWrap: 'break-word', margin: '5rem 7rem'}}>
+                GRAB <br /> YOUR PLACE <br /> BEFORE ITS TOO LATE
+            </div>
+            <div style={{marginLeft: '10rem'}}>
+                <a href="https://m.paytm.me/event-details?slug=iit-patnas-esummit24-mar15-2024" target='_blank' rel='noreferrer'>
+                    <button style={{ background: '#BD0958', borderRadius: 16, overflow: 'hidden', padding: '0.5rem', color: 'white', fontSize: 25}}>Register Now!</button>
+                </a>
+            </div>
+
+
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <p style={{ color: 'white', fontSize: '2.5rem' }}>EVENTS</p>
             </div>
+
 
             <Events></Events>
             {/* footer */}

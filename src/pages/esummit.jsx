@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './esummit.css'
 import IITP from '../static/IITP.jpg'
-import esummit from '../static/esummit-1.png'
+import theme from '../static/theme.jpg'
+import Navbar from '../components/navbar';
 import EventCard from '../components/events'
+import Footer from '../components/footer';
+import Events from './Events';
 
 export default function Esummit() {
 
-    const events = [
-        {
-          poster: 'event1-poster.jpg',
-          date: 'March 10, 2024',
-          venue: 'Some Venue',
-          registrationLink: 'https://example.com/event1-registration',
-        },
-        {
-          poster: 'event2-poster.jpg',
-          date: 'March 15, 2024',
-          venue: 'Another Venue',
-          registrationLink: 'https://example.com/event2-registration',
-        },
-        // Add more events as needed
-      ];
 
     const [countdown, setCountdown] = useState({
         days: 0,
@@ -50,50 +38,32 @@ export default function Esummit() {
 
         return () => clearInterval(interval);
     }, []);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    
+ 
     return (
         <div className='background-container' style={{ width: '100%', maxWidth: '100vw', overflowX: 'hidden' }}>
-           <nav className="navbar navbar-expand-lg navbar-light" style={{ margin: '2rem 8rem'}}>
-            <a className="navbar-brand" href="#">
-                <img src={esummit} alt="" style={{ height: '4rem', width: 'auto' }} />
-            </a>
-            <button className="navbar-toggler" type="button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
-                <ul className="navbar-nav ml-auto mr-auto nav-links">
-                    <li className="nav-item">
-                        <a className="nav-link" style={{ color: 'white' }} href="#home">Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link"  style={{ color: 'white' }} href="#about">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link"  style={{ color: 'white' }} href="#events">Events</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link"  style={{ color: 'white' }} href="#team">Team</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <Navbar />
 
+            {/* theme */}
+
+            <div className='center-img' >
+                <img src={theme} alt="" style={{objectFit: 'cover' }} />
+            </div>
 
 
             {/* countdown */}
-            <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center', height: '100vh', margin: '5rem 3.05rem', overflow: 'hidden'}}>
+            <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center', height: '20rem', margin: '5rem 3.05rem', overflow: 'hidden'}}>
                 <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', paddingBottom: '4rem', margin: '4rem' }}>
-                    <div style={{width: '90%', display: 'flex', height: '16rem', position: 'relative', background: 'radial-gradient(38.61% 50.88% at 31.45% 51.80%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0) 100%)', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)', width: '100%' }}>
+                    <div style={{width: '90%', display: 'flex', height: '12rem', position: 'relative', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)', width: '100%' }}>
                         <div style={{width: '40%', height: '100%', marginLeft: '8rem', marginTop: '1.05rem'}}>
-                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Count </span>
-                            <span style={{color: '#601A71', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Every<br/></span>
-                            <span style={{color: '#440C52', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '800', wordWrap: 'break-word'}}>Second</span>
-                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}> Until<br/>the </span>
-                            <span style={{color: '#450C53', fontSize: 'clamp(4px, 5vw, 60px)', fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Summit</span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Count </span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Every<br/></span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Second</span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}> Until<br/>the </span>
+                            <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Summit</span>
                         </div>
-                        <div style={{marginTop: '1.05rem', marginBottom:'4rem', display: 'flex', }}>
-                            <div style={{color: 'white', fontSize: 'clamp(50px, 5vw, 80px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word', display: 'flex'}}>
+                        <div style={{marginTop: '1.75rem', marginBottom:'4rem', display: 'flex', }}>
+                            <div style={{color: 'white', fontSize: 'clamp(50px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word', display: 'flex'}}>
                                 <div style={{marginRight: '2rem'}}>
                                     <div>
                                         {countdown.days} :
@@ -133,16 +103,22 @@ export default function Esummit() {
                 </div>
             </div>
 
-            <div style={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem', marginTop: '3rem', marginBottom: '2rem', }}>
-                <div style={{fontSize: '4rem', color: 'white', textAlign: 'center', marginBottom: '2rem'}}>
-                    About the E-Summit
+            <div style={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem', marginBottom: '5rem', display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{marginTop: '10rem', marginRight: '2rem'}}>
+                    <div style={{fontSize: '4rem', color: 'white', textAlign: 'center', marginBottom: '2rem'}}>
+                        About the E-Summit
+                    </div>
+                    <div style={{fontSize: '1.5rem', color: 'white', textAlign: 'center'}}>
+                        E-Summit 2k24 by E-Cell, IIT Patna is your gateway to an inspiring week of entrepreneurial exploration. From March 15th to 17th, immerse yourself in dynamic events, enlightening lectures, and thrilling competitions. Discover the art of turning innovative ideas into reality through case studies, pitching sessions, and engaging auctions. 
+                    </div>
+                    <div style={{fontSize: '1.5rem', color: 'white', textAlign: 'center'}}>
+                        This summit is your opportunity to glean insights from seasoned professionals, refine your skills, and ignite your entrepreneurial journey. Register now to join a community of like-minded individuals and set your entrepreneurial spirit ablaze!                    
+                    </div>
                 </div>
-                <div style={{fontSize: '1.5rem', color: 'white', textAlign: 'center'}}>
-                    E-Summit 2k24 by E-Cell, IIT Patna is your gateway to an inspiring week of entrepreneurial exploration. From March 15th to 17th, immerse yourself in dynamic events, enlightening lectures, and thrilling competitions. Discover the art of turning innovative ideas into reality through case studies, pitching sessions, and engaging auctions. 
+                <div>
+                    <img src={IITP} alt="IIT Patna" style={{ width: '100%', height: 'auto', borderRadius: '50px', boxShadow: '0px 0px 20px 5px rgba(255, 255, 255, 0.2)', marginTop: '2rem' }} />
                 </div>
-                <div style={{fontSize: '1.5rem', color: 'white', textAlign: 'center'}}>
-                    This summit is your opportunity to glean insights from seasoned professionals, refine your skills, and ignite your entrepreneurial journey. Register now to join a community of like-minded individuals and set your entrepreneurial spirit ablaze!                    
-                </div>
+                
             </div>
             <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', marginBottom: '2rem'}}>
                 <svg width="385" height="313" viewBox="0 0 385 313" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,22 +217,15 @@ export default function Esummit() {
                     </defs>
                 </svg>
             </div>
-            
-
-            <div style={{display: 'flex',justifyContent: 'space-around', alignItems: 'center'}}>
-                {events.map((event, index) => (
-                <EventCard key={index} event={event} />
-                ))}
+            <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <p style={{ color: 'white', fontSize: '2.5rem' }}>EVENTS</p>
             </div>
 
-            
-
+            <Events></Events>
             {/* footer */}
-            <svg className='svg' width="1440" height="466" viewBox="0 0 1440 466" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-8 6.7928L26.6781 3.24665C89.9425 -3.2227 153.858 2.10751 215.177 18.9664L443.232 81.6674C521.26 103.121 603.253 105.842 682.532 89.6089L1048.36 14.7053C1146.21 -5.32989 1247.78 3.58617 1340.64 40.3629L1442 80.505V466H-8V6.7928Z" fill="#371B56"/>
-            </svg>
 
-
+            
+            <Footer/>
         </div>
     )
 }

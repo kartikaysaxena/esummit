@@ -1,29 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import EventCard from '../components/events'
+import React, { useState, useEffect, useRef } from 'react';
+import HorizontalScroll from 'react-scroll-horizontal'
+import EventCard from '../components/events';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+import './esummit.css';
 
 export default function Events() {
+    const [events, setEvents] = useState([]);
 
-    const events = [
-        {
-          poster: 'event1-poster.jpg',
-          date: 'March 10, 2024',
-          venue: 'Some Venue',
-          registrationLink: 'https://example.com/event1-registration',
-        },
-        {
-          poster: 'event2-poster.jpg',
-          date: 'March 15, 2024',
-          venue: 'Another Venue',
-          registrationLink: 'https://example.com/event2-registration',
-        },
-        // Add more events as needed
-      ];
+    useEffect(() => {
+        const fetchEvents = async () => {
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbzXU8rKk32OXOLJRCJQuuN9l9JNyFxUoWio7M1AGp5rD6sjWkl3RpFIV0Yy4Dt8u24f0w/exec');
+                const data = await response.json();
+                setEvents(data);
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        };
+
+        fetchEvents();
+    }, []);
+    const ref = useRef(null);
+    const [containerWidth, setWidth] = useState(100 + "%");
+    const [animationState, setPlay] = useState("paused");
+    useEffect(() => {
+      if (ref.current) {
+        setWidth(ref.current.scrollWidth + "px");
+        setPlay("running");
+      }
+    }, []);
 
     return (
-        <div style={{display: 'flex',justifyContent: 'space-around', alignItems: 'center'}}>
-        {events.map((event, index) => (
-        <EventCard key={index} event={event} />
-        ))}
-    </div>
-    )
+           <div className="d-flex" ref={ref} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: `${containerWidth}`, animationPlayState: animationState }}>
+                    {events.map((event, index) => (
+                        <EventCard key={index} event={event}  />
+                    ))}
+            </div>
+    );
 }

@@ -1,0 +1,322 @@
+.rimg img{
+    margin-top: 8%;
+   
+    width:140%;
+    }
+
+    .box{
+        margin-top:10%;
+        display:flex;
+        text-align: center;
+        background-color: #75b2ba;
+        border-radius: 40px;
+        padding: 10px;
+        gap: 60px;
+        box-shadow: 5px 10px #bf5c0040 ;
+    }
+    
+    .grid{
+        position: relative;
+        display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    gap:20px;
+    background-color: #00000076;
+    border-radius: 30px;
+    padding:5%
+    }
+    
+    .gridele{
+        max-width: 270px;
+        margin-right: auto;
+        margin-bottom: 4.5rem;
+        margin-left: auto;
+        height: 235px;
+        padding: 3.25rem 2rem 2rem 2rem;
+        border-radius: 50px;
+        background: #41484d6c;
+       position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    }
+    .winnity{
+      
+            display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        margin-right: -15px;
+        margin-left: -15px;
+        border-radius: 15px;
+       
+    }
+    .winy{
+        max-width: 300px;
+        margin-right: auto;
+        margin-bottom: 4.5rem;
+       justify-content: end;
+        margin-left: auto;
+        padding: 3.25rem 2rem 2rem 2rem;
+       position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    }
+    .winy p{
+font-size: 24px;
+    }
+    .card-title img{
+        width: 80%;
+    }
+
+    .btn1{
+        background-color: #BF5C00;
+        border-radius: 50px;
+        padding: 12px;
+        color: #fff;
+        font-weight: bold;
+       width: 180px;
+       height: 50px;
+        transition: 0.6s ease;
+        text-decoration: none;
+    }
+    
+    
+    .box .heading{
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-weight:bolder;
+    margin: 10px;
+    }
+    
+    .gridy{
+        display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    row-gap: 50px;
+    background-color: #00000076;
+    border-radius: 30px;
+    padding:5%
+    }
+    
+    .gridel{
+        max-width: 270px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 255px;
+        padding: 3.25rem 2rem 2rem 2rem;
+        border-radius: 50px;
+        background: #41484d6c;
+       position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    }
+hr{
+    height:2px;
+}
+.faq{
+   padding-left: 20%;
+   margin-top: 10%;
+}
+.down-arrow{
+    position: absolute;
+  right: 26%;
+  margin-top: 13px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.answer{
+    display: none;
+}
+.contain{
+    width:70%;
+    
+}
+.faq p{
+    font-size: 20px;
+}
+.question{
+    display: flex;
+    height: 40px;
+}
+
+.qa .answer {
+    
+    transition: height 1s ease-out;
+    transform: scaleY(0);
+    display: block;
+  
+  }
+  
+  .qao .answer { 
+    display: block;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+  }
+  .apnform{
+    margin-top: 15%;
+   padding: 2%;
+  }
+  .contai{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    
+   padding: 25px;
+    background-color: #211f1f7e;
+    border-radius: 30px;
+   
+  }
+  .contai .heading{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 17px;
+  }
+  
+  .btn{
+    background-color: #BF5C00;
+    border-radius: 50px;
+    padding: 30px 30px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+   width: 280px;
+   height: 100px;
+    transition: 0.6s ease;
+    text-decoration: none;
+}
+
+
+    .rse{
+        width: 80%;
+        margin: auto;
+        top: 1200%;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .rse h16{
+        margin-top: 60%;
+        font-size: 46px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .rse h17{
+        margin-top: 60%;
+        font-size: 46px;
+        font-weight: 600;
+        color: red;
+    }
+    
+    p2{
+        margin-top: 15px;
+        color: red;
+        font-size: 30px;
+    }
+    
+    p1{
+        margin-top: 15px;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    
+    .rw{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .rse-col{
+        flex-basis: 31%;
+        background: transparent;
+        border-radius: 30px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s  ease;
+    }
+    
+    .raw{
+        margin-top: 0.0000000005%;
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .corse-col{
+        flex-basis: 31%;
+        background: transparent;
+        border-radius: 30px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s ease;
+    }
+    
+    h6{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    p{
+        margin-top: 15px;
+    }
+    
+    .rse-col:hover{
+        box-shadow: 0 0 20px 0px rgba(1,0,0,0.2);
+    }
+    
+    .end {
+        color: #fff;
+        left: 33%;
+        text-align: center;
+    }
+    input{
+        background-color: rgb(120, 118, 118);
+        margin-top: 3px;
+        border-radius: 20px;
+        color: #000;
+    }
+    
+    @media (max-width: 768px) {
+
+        .gridy{
+            display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        row-gap: 50px;
+        background-color: #00000076;
+        border-radius: 30px;
+        padding:5%
+        }
+        
+        .winnity{
+      
+            display: grid;
+          grid-template-columns:  1fr 1fr;
+
+        border-radius: 15px;
+       
+    }
+    }

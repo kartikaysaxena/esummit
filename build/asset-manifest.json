@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3dea3eaf.css",
+    "main.js": "/static/js/main.42b3b9c9.js",
+    "static/js/453.948f8ffa.chunk.js": "/static/js/453.948f8ffa.chunk.js",
+    "static/media/LP.png": "/static/media/LP.01ed10d7567231888641.png",
+    "static/media/adv-your-way.jpg": "/static/media/adv-your-way.48f1d50c65bac3bdcd9f.jpg",
+    "static/media/IITP.jpg": "/static/media/IITP.d9b501d2efd06bc79b5b.jpg",
+    "static/media/bizz-quizz-final.jpg": "/static/media/bizz-quizz-final.dd21ea25f546c52fee26.jpg",
+    "static/media/executive-desk.jpg": "/static/media/executive-desk.c37399295d571ef4ab67.jpg",
+    "static/media/entrepreneurial-dilemma.jpg": "/static/media/entrepreneurial-dilemma.83b4ad4ed5f89ddc3709.jpg",
+    "static/media/case-study.jpg": "/static/media/case-study.a17bd96313bbdaf1c92c.jpg",
+    "static/media/angel.jpg": "/static/media/angel.70db7a509a1eb80fe684.jpg",
+    "static/media/pitch-it-up.jpg": "/static/media/pitch-it-up.4140da36676098ee888f.jpg",
+    "static/media/theme.jpg": "/static/media/theme.a10ba5ef3e0737ccd936.jpg",
+    "static/media/svg-bg.png": "/static/media/svg-bg.f7643e854ed461087038.png",
+    "static/media/esummit-1.png": "/static/media/esummit-1.bd9a00cb2c17259868ab.png",
+    "index.html": "/index.html",
+    "main.3dea3eaf.css.map": "/static/css/main.3dea3eaf.css.map",
+    "main.42b3b9c9.js.map": "/static/js/main.42b3b9c9.js.map",
+    "453.948f8ffa.chunk.js.map": "/static/js/453.948f8ffa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dea3eaf.css",
+    "static/js/main.42b3b9c9.js"
+  ]
+}

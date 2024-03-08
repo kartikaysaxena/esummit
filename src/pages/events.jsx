@@ -22,7 +22,7 @@ export default function Events() {
         fetchEvents();
     }, []);
     const ref = useRef(null);
-    const [containerWidth, setWidth] = useState(100 + "%");
+    const [containerWidth, setWidth] = useState(160 + "%");
     const [animationState, setPlay] = useState("paused");
     useEffect(() => {
       if (ref.current) {
@@ -32,7 +32,7 @@ export default function Events() {
     }, []);
 
     return (
-           <div className="d-flex" ref={ref} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: `${containerWidth}`, animationPlayState: animationState }}>
+           <div className="d-flex" id='events' ref={ref} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: `${containerWidth}`, animationPlayState: animationState, marginBottom: '4rem' }}>
                     {events.map((event, index) => (
                         <EventCard key={index} event={event}  />
                     ))}

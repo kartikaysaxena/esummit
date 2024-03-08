@@ -52,17 +52,17 @@ export default function Esummit() {
 
 
             {/* countdown */}
-            <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center', height: '20rem', margin: '5rem 3.05rem', overflow: 'hidden'}}>
-                <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', paddingBottom: '4rem', margin: '4rem' }}>
-                    <div style={{width: '90%', display: 'flex', height: '12rem', position: 'relative', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)', width: '100%' }}>
-                        <div style={{width: '40%', height: '100%', marginLeft: '8rem', marginTop: '1.05rem'}}>
+            <div style={{display: 'inlinr-block',justifyContent: 'center', alignItems: 'center', height: '20rem', margin: '5rem 3.05rem', overflow: 'hidden'}}>
+                <div style={{display: 'flex', justifyContent: 'space-around', width: '100%', height:'100%' }}>
+                    <div style={{width: '90%', display: 'flex', height: '80%', position: 'relative', boxShadow: '-5px -5px 250px rgba(255, 255, 255, 0.02) inset', borderRadius: 50, border: '4px rgba(255, 255, 255, 0.40) solid', backdropFilter: 'blur(42px)' }}>
+                        <div style={{width: '50%', height: '100%', marginLeft: '8rem', alignItems: 'center', marginTop: '2vh'}}>
                             <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Count </span>
                             <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Every<br/></span>
                             <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Second</span>
                             <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}> Until<br/>the </span>
                             <span style={{color: 'white', fontSize: 'clamp(4px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Summit</span>
                         </div>
-                        <div style={{marginTop: '1.75rem', marginBottom:'4rem', display: 'flex', }}>
+                        <div style={{marginTop: '2vh', marginBottom:'4rem', display: 'flex', }}>
                             <div style={{color: 'white', fontSize: 'clamp(50px, 5vw, 40px)', fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word', display: 'flex'}}>
                                 <div style={{marginRight: '2rem'}}>
                                     <div>
@@ -104,8 +104,8 @@ export default function Esummit() {
             </div>
 
             <div style={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem', marginBottom: '5rem', display: 'flex', justifyContent: 'space-between' }}>
-                <div style={{marginTop: '10rem', marginRight: '2rem'}}>
-                    <div style={{fontSize: '4rem', color: 'white', textAlign: 'center', marginBottom: '2rem'}}>
+                <div style={{marginTop: '2em', marginRight: '2rem'}}>
+                    <div style={{fontSize: '5rem', color: 'white', textAlign: 'center', marginBottom: '2rem'}}>
                         About the E-Summit
                     </div>
                     <div style={{fontSize: '1.5rem', color: 'white', textAlign: 'center'}}>
@@ -220,18 +220,18 @@ export default function Esummit() {
 
             <br />
 
-            <div style={{color: 'white', fontSize: 84, fontFamily: 'Lato', fontWeight: '900', wordWrap: 'break-word', margin: '5rem 7rem'}}>
+            <div style={{color: 'white', fontSize: 84, fontFamily: 'Lato', fontWeight: '900', wordWrap: 'break-word', margin: '5rem 7rem', marginBottom: '5rem'}}>
                 GRAB <br /> YOUR PLACE <br /> BEFORE ITS TOO LATE
             </div>
-            <div style={{marginLeft: '10rem'}}>
+            <div style={{marginLeft: '10rem', marginBottom: '6rem'}}>
                 <a href="https://m.paytm.me/event-details?slug=iit-patnas-esummit24-mar15-2024" target='_blank' rel='noreferrer'>
                     <button style={{ background: '#BD0958', borderRadius: 16, overflow: 'hidden', padding: '0.5rem', color: 'white', fontSize: 25}}>Register Now!</button>
                 </a>
             </div>
 
 
-            <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-                <p style={{ color: 'white', fontSize: '2.5rem' }}>EVENTS</p>
+            <div style={{ width: '100%', display: 'flex', justifyContent: 'center', color: 'white', fontSize: 84, fontFamily: 'Lato', wordWrap: 'break-word', marginBottom: '2rem' }}>
+                <p>EVENTS</p>
             </div>
 
 

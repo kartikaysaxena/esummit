@@ -52,7 +52,7 @@ a {
     display: flex;
     transform: translateX(calc(100vw));
     overflow: visible;
-    animation: animateContainer 20s linear forwards infinite;
+    animation: animateContainer 15s linear forwards infinite;
     animation-play-state: paused;
   }
 @keyframes animateContainer {

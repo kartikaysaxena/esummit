@@ -21,10 +21,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/ecell/index.html"></Navigate>} />
-        <Route path='/esummit' element={<Esummit/>}></Route>
-        <Route path='/ecell/index.html'></Route>
-       </Routes>
+        <Route path="/" element={<Esummit></Esummit>} />
+\       </Routes>
     </Router>
   );
 }

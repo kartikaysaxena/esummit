@@ -4,7 +4,7 @@ import IITP from '../static/IITP.jpg'
 import theme from '../static/theme.jpg'
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import Events from '../pages/Events';
+import Events from './events';
 
 export default function Esummit() {
 

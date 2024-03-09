@@ -1,0 +1,35 @@
+.slider-container2 {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows span {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.arrows span:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}

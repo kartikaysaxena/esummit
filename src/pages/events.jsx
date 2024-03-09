@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import HorizontalScroll from 'react-scroll-horizontal'
 import EventCard from '../components/events';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
 import './esummit.css';
 
 export default function Events() {

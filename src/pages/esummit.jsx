@@ -3,7 +3,6 @@ import './esummit.css'
 import IITP from '../static/IITP.jpg'
 import theme from '../static/theme.jpg'
 import Navbar from '../components/navbar';
-import EventCard from '../components/events'
 import Footer from '../components/footer';
 import Events from './Events';
 
